@@ -17,9 +17,9 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-          # Adding caching helps speed up subsequent runs
           cache: 'maven'
 
       - name: Build with Maven
+        # Using 'run' in the specific directory
         run: mvn clean install
         working-directory: cicd_maven/demo
