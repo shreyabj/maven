@@ -27,4 +27,4 @@ jobs:
       - name: Build using Maven
         run: mvn clean install
         # Ensure this path matches your repository folder structure exactly
-        working-directory: cicd_maven/demo
+        working-directory: cicd-demo
